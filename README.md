@@ -1,6 +1,6 @@
 # Fleet Balance
 
-A simulation of shared bikes and scooters on a fictional city, built to study one question: how much should an operator move vehicles, and when?
+A simulation of shared bikes and scooters in a fictional city. It asks: how much should an operator move vehicles, and when?
 
 Trips start and end in zones with commute and leisure patterns. A trip is lost when no vehicle is in the zone. You can compare three policies (no rebalancing, a night reset, hourly reactive moves), look at where supply and demand diverge on a heatmap, and see the cost per extra trip served.
 
@@ -19,3 +19,7 @@ All data is generated. Nothing here comes from a real operator, and the results 
 - `fleet_balance/rebalance.py` targets and three matching methods
 - `fleet_balance/sim.py` hourly simulation and policy comparison
 - `app.py` Streamlit interface
+
+## Author
+
+[dmcataneo](https://github.com/dmcataneo)
