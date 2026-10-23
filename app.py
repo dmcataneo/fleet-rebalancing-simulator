@@ -10,7 +10,7 @@ from fleet_balance.sim import (POLICIES, Config, compare, cost_per_extra_trip,
 
 st.set_page_config(page_title="Fleet Balance", layout="wide")
 st.title("Fleet Balance")
-st.caption("Shared bikes and scooters on a fictional city. All data is simulated.")
+st.caption("Shared bikes and scooters in a fictional city. All data is simulated.")
 
 with st.sidebar:
     st.header("Scenario")
@@ -124,3 +124,8 @@ with tab_cmp:
 
 with tab_theory:
     st.markdown((__import__("pathlib").Path(__file__).parent / "THEORY.md").read_text())
+
+
+st.divider()
+st.caption("By [dmcataneo](https://github.com/dmcataneo) · "
+           "[Source code](https://github.com/dmcataneo/fleet-rebalancing-simulator)")
