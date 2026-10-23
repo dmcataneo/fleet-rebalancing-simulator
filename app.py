@@ -97,9 +97,10 @@ with tab_map:
     f2.add_bar(x=list(range(24)), y=prof["demand"], name="Requests")
     f2.add_bar(x=list(range(24)), y=prof["lost"], name="Lost", marker_color="crimson")
     f2.add_vline(x=hour, line_dash="dot")
-    f2.update_layout(barmode="overlay", height=300, title=f"Requests and lost trips by hour ({shown[-1]})",
+    f2.update_layout(barmode="overlay", height=300, title="Requests and lost trips",
                      xaxis_title="hour of day", yaxis_title="trips per hour (city total)",
                      margin=dict(l=0, r=0, t=40, b=0))
+    st.caption(f"Hourly profile for policy: {shown[-1]}")
     st.plotly_chart(f2, width="stretch")
 
 with tab_cmp:
